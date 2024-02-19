@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+  <title>Chhattisgarh Schemes Dashboard </title>
+
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Segoe UI, san serif; 
+      text-align: center;
+      background-color: none,#34495E;
+
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #ECF0F1;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-justify: center;
+      vertical-align: middle;
+      border-radius: 15px;
+      border: 2px solid #ECF0F1;
+      background-color: #333;
+
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+      color: #ECF0F1;
+      text-align: center;
+      
+    }
+
+    a {
+      font-size: 22px;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+      padding: 10px 20px;
+      background-color: #333;
+      border-radius: 5px;
+      border: 1px solid #ECF0F1;
+    }
+
+    a:hover {
+      color: #ff5500;
+      background-color: #333;
+    }
+
+    #myFrame {
+      width: 100%;
+      height: 100vh;
+      border: yes;
+      margin: 0 auto;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+     nav{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+     }
+
+    nav .logo{
+      list-style: none;
+      display: inline-block;
+      margin-left: 40px;
+     }
+
+    #backgroundVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    #content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #ff5500;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #ff3300;
+    }
+
+    #fullScreenBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #333;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #fullScreenBtn:hover {
+      background-color: #666;
+    }
+    #refreshBtn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 8px 20px;
+      background-color: #333;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 1px 0px;
+      transition: background-color 0.3s;
+    }
+
+    #refreshBtn:hover {
+      background-color: #666;
+
+    #logo-container {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .logo-row {
+      text align: center;
+    }
+
+    .back-video{
+       position: absolute;
+       right: 0;
+       bottom: 0;
+       z-index: -1;
+    }
+
+    #frame-content {
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #logo {
+      position: relative;
+      top: 10px;
+      left: 10px;
+      height: 50%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      vertical-align: middle;
+      }
+   #logo1 {
+      position: relative;
+      top: 10px;
+      right:0px;
+      height: 50%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      vertical-align: middle;
+    }
+    #logo2 {
+      position: relative;
+      top: 10px;
+      right: 5px;
+      height: 50%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      vertical-align: middle;
+    }
+  </style>
+
+  </head>
+  
+  <body>
+     <h1> 
+      <img class="logo1" src="https://presentations.gov.in/wp-content/uploads/2020/06/PMAY-Preview.png?x96961" height="60px" width="60px" class="Logo">
+      
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Coat_of_arms_of_Chhattisgarh.svg" height="60px" width="60px" Class="Logo">
+      
+      Chhattisgarh Schemes Dashboard
+    
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Coat_of_arms_of_Chhattisgarh.svg" height="60px" width="60px" Class="Logo">  
+      
+      <img class="logo2" src="https://play-lh.googleusercontent.com/0AmM2cfZ3WtcLmdM9HFNTYMphJFxtGybgtc_O96trS3mEYLh0OB-MKzikkR7ISYlc38=w240-h480-rw" height="60px" width="60px" class="Logo">
+    </nav>
+  </h1>
+  
+ 
+  <body>
+
+  
+
+  <video id="backgroundVideo" autoplay loop muted>
+    <source src="video/bg_video.mp4" type="video/mp4">
+    
+  
+    <!-- Include additional source elements for different video formats if needed -->
+  </video>
+
+  <div>
+    <ul>
+      <li><a href="https://app.powerbi.com/view?r=eyJrIjoiYTRkODY0MTctMzI1NC00ZmU2LTkzYWItZjNhZjljZGU1N2M1IiwidCI6IjViOTczZjk5LTc3ZGYtNGJlYi1iMjdkLWFhMGM3MGI4NDgyYyIsImMiOjh9" target="myFrame">BLC - Current Status</a></li>
+      <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMDc4Y2E2YTYtODIxOS00Y2Y4LWIzZmEtYTUxN2VmMmU0OTBkIiwidCI6IjViOTczZjk5LTc3ZGYtNGJlYi1iMjdkLWFhMGM3MGI4NDgyYyIsImMiOjh9" target="myFrame">BLC - Incremental</a></li>
+      <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMzc4MzQzYjQtOTgyNS00OTQyLTg4Y2QtNmQ2MjlkNWQ2YjIxIiwidCI6IjViOTczZjk5LTc3ZGYtNGJlYi1iMjdkLWFhMGM3MGI4NDgyYyIsImMiOjh9" target="myFrame">Godhan Nyay Yojana</a></li>
+      <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMjVhMGQ1NDgtOTAwYi00ZTA0LTk4ZDktNTEyNjQwMTgxYTU4IiwidCI6IjViOTczZjk5LTc3ZGYtNGJlYi1iMjdkLWFhMGM3MGI4NDgyYyIsImMiOjh9" target="myFrame">Swachh Survekshan 2022 Analysis</a></li>
+      <li><a href="https://app.powerbi.com/view?r=eyJrIjoiZGJlMjQ2N2YtZTdmOS00NTM5LTg0NmMtY2NmYjkxN2I4MzZlIiwidCI6IjViOTczZjk5LTc3ZGYtNGJlYi1iMjdkLWFhMGM3MGI4NDgyYyIsImMiOjh9" target="myFrame">AMRUT - Water Testing </a></li>
+    </ul>
+  </div>
+
+  <iframe id="myFrame" name="myFrame" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/HD_transparent_picture.png/1200px-HD_transparent_picture.png" style="height:100%"> <p> Water Falls</p></iframe> 
+	
+  <button id="fullScreenBtn" onclick="toggleFullScreen()">Full Screen</button>
+  
+  <button id="refreshBtn"  onclick="refreshFrame()"> <i class="material-icons">home</i></button>
+  
+  
+  <script>
+    
+    function navigateTo(url) {
+      var frame = document.getElementById("myFrame");
+      frame.src = url;
+    }
+   function refreshFrame() {
+      var frame = document.getElementById("myFrame");
+      frame.src = frame.src;
+    }
+    
+    function toggleFullScreen() {
+      var elem = document.documentElement;
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch(err => {
+          console.log(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+  </script>
+</body>
+</html>
